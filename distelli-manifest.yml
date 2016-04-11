@@ -1,4 +1,4 @@
-bmcgeheevoicebox/provision_ubuntu14_docker:
+bmcgehee/provision_ubuntu14_docker:
   Build:
     - echo "Nothing to build"
   PreInstall:
