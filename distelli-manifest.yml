@@ -9,5 +9,8 @@ bmcgeheevoicebox/provision_ubuntu14_docker:
     - sudo apt-get -y update
     - sudo apt-get -y purge lxc-docker
     - sudo apt-get -y install docker-engine
+    - sudo sh -c 'curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose'
+    - sudo chmod +x /usr/local/bin/docker-compose
   PostInstall:
     - sudo docker run hello-world
+    - /usr/local/bin/docker-compose --version
