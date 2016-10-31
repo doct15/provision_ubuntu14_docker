@@ -1,4 +1,4 @@
-bmcgeheedd1/provision_ubuntu14_docker:
+bmcgehee2/provision_ubuntu14_docker:
   Build:
     - echo "Nothing to build"
   PreInstall:
